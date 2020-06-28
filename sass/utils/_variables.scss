@@ -1,0 +1,22 @@
+$primaryTextColor: #212121;
+$primaryWhiteColor: #ffffff;
+$secondaryTextColor: #757575;
+$accentColor: #2196f3;
+$iconColor: #afb1b8;
+
+$fontFamily: Roboto, sans-serif;
+$fontWeight: 400;
+$fontSize: 14px;
+$lineHeight: 1.14;
+$letterSpacing: 0.03em;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
