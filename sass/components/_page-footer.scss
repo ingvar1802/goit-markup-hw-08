@@ -1,11 +1,11 @@
-.footer-page {
+.page-footer {
   background-color: #2f303a;
 }
-.adress-container {
+.container-adress {
   align-items: baseline;
   padding-top: 48px;
   padding-bottom: 28px;
-  //   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   text-align: center;
 
@@ -23,35 +23,23 @@
 }
 
 /* адрес*/
-.footer-contacts .logo {
-  @extend %link;
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-
+.address .logo {
   color: $primaryWhiteColor;
+  font-size: 24px;
   display: block;
   margin-bottom: 20px;
   margin-right: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
-.logo span {
-  color: $accentColor;
-}
-
 .address-list {
   @extend %list;
-
   margin-bottom: 60px;
   @media screen and (min-width: $desktop) {
     margin-bottom: 0px;
   }
 }
-.footer-contacts .location {
+.address .location {
   color: $primaryWhiteColor;
 
   display: block;
@@ -62,7 +50,7 @@
   text-decoration: none;
 }
 
-.footer-contacts .contact {
+.address .contact {
   color: rgba(255, 255, 255, 0.6);
 
   display: inline-block;
@@ -74,12 +62,13 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.footer-contacts .item:not(:last-child) {
+.address .item:not(:last-child) {
   margin-bottom: 8px;
 }
 
-/* присоединяйтесь*/
-.footer-join .join {
+/* присоединяйтесь */
+
+.social-link .join {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 20px;
@@ -94,15 +83,19 @@
     font-weight: 700;
   }
 }
-.join-list {
+.page-footer .soc-link {
   @extend %list;
-
   display: flex;
   justify-content: center;
   padding: 0;
   margin-bottom: 60px;
 }
-.footer-links {
+
+.soc-link > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.page-footer .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,13 +113,13 @@
   }
 }
 
-/* подпискa */
-.footer-submit {
+/* подписка */
+.page-footer .footer-submit {
   @media screen and (min-width: $desktop) {
     width: 570px;
   }
 }
-.footer-submit .submit-form {
+.footer-submit .form {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -137,7 +130,7 @@
     align-items: flex-start;
   }
 }
-.submit-form input {
+.form input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -152,7 +145,7 @@
     margin-bottom: 0;
   }
 }
-.footer-submit .form {
+.footer-submit .join-in {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -168,7 +161,6 @@
 }
 .footer-submit .button {
   @extend %button;
-
   position: relative;
 
   width: 200px;
@@ -197,5 +189,13 @@
     margin-bottom: 0;
     bottom: 0;
     right: 0;
+  }
+
+  .icon-send {
+    position: absolute;
+    right: 23px;
+
+    top: 50%;
+    transform: translatey(-50%);
   }
 }

@@ -7,62 +7,65 @@
     height: 80px;
     display: flex;
   }
+}
+.page-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: relative;
 
-  & .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-    position: relative;
-
-    @media screen and (min-width: $tablet) {
-      height: 80px;
-    }
-  }
-
-  /* лого */
-
-  .logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    text-decoration: none;
-    letter-spacing: 0.03em;
-    color: $primaryTextColor;
-
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      width: 100%;
-      margin-right: 81px;
-      padding-top: 26px;
-      padding-bottom: 26px;
-    }
-    @media screen and (min-width: $desktop) {
-      display: flex;
-      justify-content: space-between;
-      min-width: 148px;
-
-      font-size: 26px;
-      line-height: 1.19;
-      margin-right: 85px;
-      padding-top: 24px;
-      padding-bottom: 25px;
-    }
-  }
-  .logo span {
-    color: $accentColor;
+  @media screen and (min-width: $tablet) {
+    height: 80px;
   }
 }
 
-/* меню */
+.site-nav .item:not(:last-child) {
+  @media screen and (min-width: $tablet) {
+    margin-right: 50px;
+  }
+}
+
+/* лого */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: $primaryTextColor;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 81px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    min-width: 148px;
+
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 85px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+.logo span {
+  color: $accentColor;
+}
+
 .menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
-  border: none;
+  border: 0;
   background-color: transparent;
   fill: $primaryTextColor;
 
@@ -87,10 +90,9 @@
 
 /* навигация */
 .menu-container {
-  border-top: 1px solid #ececec;
-
   @media screen and (max-width: 767px) {
     background-color: $primaryWhiteColor;
+    border-top: 1px solid #ececec;
     display: none;
     position: absolute;
     top: 100%;
@@ -115,7 +117,7 @@
   }
 }
 
-.site-nav {
+.nav-list {
   @extend %list;
 
   @media screen and (max-width: 767px) {
@@ -130,7 +132,7 @@
   }
 }
 
-.site-nav .link {
+.nav-list .link {
   @extend %link;
 
   display: inline-block;
@@ -171,8 +173,8 @@
   }
 }
 
-/* Контакты */
-.page-header .contacts {
+/* контакты */
+.page-header .contact-list {
   @extend %list;
 
   @media screen and (min-width: $tablet) {
@@ -191,7 +193,7 @@
   }
 }
 
-.contacts .item + .item {
+.contact-list .item + .item {
   margin-top: 16px;
   @media screen and (min-width: $tablet) {
     margin-left: 0;
@@ -205,6 +207,7 @@
     margin-bottom: 0;
   }
 }
+
 .page-header .contact {
   color: $secondaryTextColor;
   letter-spacing: 0.02em;
@@ -231,7 +234,7 @@
   }
 }
 
-.icon-item {
+.icon-contact {
   fill: currentColor;
   margin-right: 8px;
   @media screen and (min-width: $desktop) {
