@@ -159,9 +159,7 @@
                 class="image"
                 src="./img/box/lap1200.jpg"
                 alt="Десктоп"
-                srcset="
-                ./img/box/lap1200.jpg,
-                ./img/box/lap1200-2x.jpg 2x"
+                srcset="./img/box/lap1200.jpg, ./img/box/lap1200-2x.jpg 2x"
               />
               <h3 class="works-title">Десктопные приложения</h3>
             </li>
@@ -170,9 +168,7 @@
                 class="image"
                 src="./img/box/box1200.jpg"
                 alt="Мобильный"
-                srcset="
-                ./img/box/box1200.jpg,
-                ./img/box/box1200-2x.jpg 2x"
+                srcset="./img/box/box1200.jpg, ./img/box/box1200-2x.jpg 2x"
               />
               <h3 class="works-title">Мобильные приложения</h3>
             </li>
@@ -181,9 +177,7 @@
                 class="image"
                 src="./img/box/desk1200.jpg"
                 alt="Дизайнер"
-                srcset="
-                ./img/box/desk1200.jpg,
-                ./img/box/desk1200-2x.jpg 2x"
+                srcset="./img/box/desk1200.jpg, ./img/box/desk1200-2x.jpg 2x"
               />
               <h3 class="works-title">Дизайнерские решения</h3>
             </li>
@@ -200,22 +194,23 @@
               <picture>
                 <source
                   srcset="
-                    ./img/team/nic480.jpg 1x,
-                    ./img/team/nic480-2x.jpg 2x
+                    ./img/team/nic-mob.jpg   1x,
+                    ./img/team/nic-mob2x.jpg 2x
                   "
                   media="(max-width: 767px)"
+                  type="image/webp"
                 />
                 <source
                   srcset="
-                    ./img/team/nic768.jpg 1x,
-                    ./img/team/nic768-2x.jpg 2x
+                    ./img/team/nic-tab.jpg   1x,
+                    ./img/team/nic-tab2x.jpg 2x
                   "
                   media="(max-width: 1199px)"
                 />
                 <source
                   srcset="
-                    ./img/team/nic1200.jpg 1x,
-                    ./img/team/nic1200-2x.jpg 2x
+                    ./img/team/nic-desk.jpg   1x,
+                    ./img/team/nic-desk2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
@@ -263,21 +258,21 @@
               <picture>
                 <source
                   srcset="
-                    ./img/team/olga480.jpg 1x,
+                    ./img/team/olga480.jpg    1x,
                     ./img/team/olga480-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
                 <source
                   srcset="
-                    ./img/team/olga768.jpg 1x,
+                    ./img/team/olga768.jpg    1x,
                     ./img/team/olga768-2x.jpg 2x
                   "
                   media="(max-width: 1199px)"
                 />
                 <source
                   srcset="
-                    ./img/team/olga1200.jpg 1x,
+                    ./img/team/olga1200.jpg    1x,
                     ./img/team/olga1200-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
@@ -326,21 +321,21 @@
               <picture>
                 <source
                   srcset="
-                    ./img/team/andr480.jpg 1x,
+                    ./img/team/andr480.jpg    1x,
                     ./img/team/andr480-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
                 <source
                   srcset="
-                    ./img/team/andr768.jpg 1x,
+                    ./img/team/andr768.jpg    1x,
                     ./img/team/andr768-2x.jpg 2x
                   "
                   media="(max-width: 1199px)"
                 />
                 <source
                   srcset="
-                    ./img/team/andr1200.jpg 1x,
+                    ./img/team/andr1200.jpg    1x,
                     ./img/team/andr1200-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
@@ -390,21 +385,21 @@
               <picture>
                 <source
                   srcset="
-                    ./img/team/ivan480.jpg 1x,
+                    ./img/team/ivan480.jpg    1x,
                     ./img/team/ivan480-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
                 <source
                   srcset="
-                    ./img/team/ivan768.jpg 1x,
+                    ./img/team/ivan768.jpg    1x,
                     ./img/team/ivan768-2x.jpg 2x
                   "
                   media="(max-width: 1199px)"
                 />
                 <source
                   srcset="
-                    ./img/team/ivan1200.jpg 1x,
+                    ./img/team/ivan1200.jpg    1x,
                     ./img/team/ivan1200-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
@@ -668,7 +663,12 @@
           <div class="footer-submit">
             <form class="form">
               <label for="email" class="join-in">подписаться на рассылку</label>
-              <input type="email" name="email" id="email" placeholder="E-mail" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
               <button type="submit" class="button">
                 Подписаться<svg class="icon-send" width="24" height="24">
                   <use href="./img/svg-sprite.svg#icon-icon-send"></use>
