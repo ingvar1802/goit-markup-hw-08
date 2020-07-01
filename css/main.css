@@ -1168,8 +1168,16 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .modal {
+    width: calc(100% - 2 * 15px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    width: calc(100% - 2 * 159px);
+    top: 60%;
     -webkit-transform: translate(-50%, -40%);
             transform: translate(-50%, -40%);
   }
@@ -1180,7 +1188,8 @@ img {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    max-width: 528px;
+    width: 528px;
+    height: 581px;
   }
 }
 
